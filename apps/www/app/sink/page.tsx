@@ -2,7 +2,7 @@ import * as React from "react"
 import Link from "next/link"
 
 import { cn } from "@/lib/utils"
-import AccordionDemo from "@/registry/default/example/accordion-demo"
+import AccordionDemo from "@/registry/default/example/accordion-single-demo"
 import AlertDialogDemo from "@/registry/default/example/alert-dialog-demo"
 import AspectRatioDemo from "@/registry/default/example/aspect-ratio-demo"
 import AvatarDemo from "@/registry/default/example/avatar-demo"
@@ -11,7 +11,6 @@ import BadgeDestructive from "@/registry/default/example/badge-destructive"
 import BadgeOutline from "@/registry/default/example/badge-outline"
 import BadgeSecondary from "@/registry/default/example/badge-secondary"
 import ButtonDemo from "@/registry/default/example/button-demo"
-import ButtonDestructive from "@/registry/default/example/button-destructive"
 import ButtonGhost from "@/registry/default/example/button-ghost"
 import ButtonLink from "@/registry/default/example/button-link"
 import ButtonLoading from "@/registry/default/example/button-loading"
@@ -97,7 +96,6 @@ export default function KitchenSinkPage() {
               <div className="flex space-x-2">
                 <ButtonDemo />
                 <ButtonSecondary />
-                <ButtonDestructive />
               </div>
               <div className="flex space-x-2">
                 <ButtonOutline />

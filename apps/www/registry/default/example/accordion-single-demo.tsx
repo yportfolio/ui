@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/registry/default/ui/accordion"
 
-export default function AccordionDemo() {
+export default function AccordionSingleDemo() {
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">

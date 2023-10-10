@@ -264,12 +264,19 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/default/ui/tooltip")),
       files: ["registry/default/ui/tooltip.tsx"],
     },
-    "accordion-demo": {
-      name: "accordion-demo",
+    "accordion-single-demo": {
+      name: "accordion-single-demo",
       type: "components:example",
       registryDependencies: ["accordion"],
-      component: React.lazy(() => import("@/registry/default/example/accordion-demo")),
-      files: ["registry/default/example/accordion-demo.tsx"],
+      component: React.lazy(() => import("@/registry/default/example/accordion-single-demo")),
+      files: ["registry/default/example/accordion-single-demo.tsx"],
+    },
+    "accordion-multiple-demo": {
+      name: "accordion-multiple-demo",
+      type: "components:example",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/default/example/accordion-multiple-demo")),
+      files: ["registry/default/example/accordion-multiple-demo.tsx"],
     },
     "alert-demo": {
       name: "alert-demo",
@@ -341,19 +348,12 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/default/example/button-demo")),
       files: ["registry/default/example/button-demo.tsx"],
     },
-    "button-secondary": {
-      name: "button-secondary",
+    "button-danger": {
+      name: "button-danger",
       type: "components:example",
-      registryDependencies: ["button"],
-      component: React.lazy(() => import("@/registry/default/example/button-secondary")),
-      files: ["registry/default/example/button-secondary.tsx"],
-    },
-    "button-destructive": {
-      name: "button-destructive",
-      type: "components:example",
-      registryDependencies: ["button"],
-      component: React.lazy(() => import("@/registry/default/example/button-destructive")),
-      files: ["registry/default/example/button-destructive.tsx"],
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/default/example/button-danger")),
+      files: ["registry/default/example/button-danger.tsx"],
     },
     "button-outline": {
       name: "button-outline",
