@@ -1,6 +1,7 @@
 import { Button } from "@/registry/default/ui/button"
 import {
   Tooltip,
+  TooltipArrow,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
@@ -13,8 +14,10 @@ export default function TooltipDemo() {
         <TooltipTrigger asChild>
           <Button variant="outline">Hover</Button>
         </TooltipTrigger>
+
         <TooltipContent>
           <p>Add to library</p>
+          <TooltipArrow className="h-2 w-4" />
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>

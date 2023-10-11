@@ -3,6 +3,7 @@ import { Input } from "@/registry/default/ui/input"
 import { Label } from "@/registry/default/ui/label"
 import {
   Popover,
+  PopoverArrow,
   PopoverContent,
   PopoverTrigger,
 } from "@/registry/default/ui/popover"
@@ -14,6 +15,7 @@ export default function PopoverDemo() {
         <Button variant="outline">Open popover</Button>
       </PopoverTrigger>
       <PopoverContent className="w-80">
+        <PopoverArrow className="h-3 w-6 fill-popover" />
         <div className="grid gap-4">
           <div className="space-y-2">
             <h4 className="font-medium leading-none">Dimensions</h4>
